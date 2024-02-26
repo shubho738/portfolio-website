@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+
+  :root {
+
+    /*  colors  */
+
+    --clr-background: 0 0% 5%;
+    --clr-foreground: 0 0% 100%;
+
+    --clr-accent: 259 72% 59%;
+
+    --clr-neutral-light: 0 0% 95%;
+    --clr-neutral-md: 0 0% 20%;
+    --clr-neutral-dark: 0 0% 0%;
+
+    --clr-btn: 207 92% 53%;
+    --clr-btn-text: 0 0% 100%;
+    --clr-btn-loader: 0 0% 100%;
+
+    --clr-input: 0 0% 100%;
+    --clr-input-text: 0 0% 0%;
+
+  }
+
+}
+
+
+@layer base {
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-[1.0625rem] text-foreground;
+  }
+
+  p {
+    @apply leading-7;
+  }
+}
+
+
+@layer utilities {
+
+
+  .container {
+    @apply max-w-[85rem] mx-auto px-4 sm:px-8;
+  }
+
+
+  /* text decorations  */
+
+
+  .underline-split {
+    position: relative;
+  }
+
+  .underline-split::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: -2px;
+    background: hsl(var(--clr-accent));
+    transition: .2s ease-in-out;
+  }
+
+  .underline-split:hover::before {
+    height: 2px;
+  }
+
+  .underline-split:hover::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -6px;
+    right: 0;
+    background: hsl(var(--clr-accent));
+  }
+
+
+  .underline-meet {
+    position: relative;
+  }
+
+  .underline-meet::before,
+  .underline-meet::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: hsl(var(--clr-accent));
+    transition: width .2s ease-in-out;
+  }
+
+  .underline-meet::before {
+    left: 0;
+  }
+
+  .underline-meet::after {
+    right: 0;
+  }
+
+
+  .underline-meet:hover::before,
+  .underline-meet:hover::after {
+    width: 50%;
+  }
+
+
+
+
+  .heading-underline {
+    position: relative;
+  }
+
+  .heading-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    width: 50px;
+    height: 1px;
+    background: hsl(var(--clr-accent));
+  }
+
+
+  /*  transtions*/
+
+
+  .transition-standard {
+    @apply transition duration-200 ease-in-out;
+  }
+}
