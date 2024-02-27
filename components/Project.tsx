@@ -76,6 +76,7 @@ const Project = ({title, techstack, image, overview, liveHref, githubHref}: Proj
       <div>
         <Link
           href={liveHref}
+          target="_blank"
         >
           <div
             className="relative w-[100%] xl:w-[65%] max-w-[400px] aspect-[2/1.6]"
