@@ -11,15 +11,4 @@ I'm a React developer passionate about crafting dynamic and responsive web appli
 - Next.js App Router
 - TypeScript
 - Tailwind CSS
-
-
-## Installation
-
-1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Start the development server using `npm run dev`.
-
-## Usage
-
-- Navigate to `localhost:3000` in your browser to access the application.
-- Explore the various features of the social media site for travelers.
+- Formspree
