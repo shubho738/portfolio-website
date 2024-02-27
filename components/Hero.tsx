@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import {Github, Linkedin, Mail} from 'lucide-react'
 
+import {CONTACT_INFO} from '@/config/profile'
 import Button from './ui/Button'
 import LinkIcon from './ui/LinkIcon'
 
@@ -40,21 +41,21 @@ const Hero = () => {
             <LinkIcon
               icon={Github}
               size={30}
-              href="https://github.com"
+              href={CONTACT_INFO.GITHUB}
               newTab
             />
 
             <LinkIcon
               icon={Linkedin}
               size={30}
-              href="https://linkedin.com"
+              href={CONTACT_INFO.LINKEDIN}
               newTab
             />
 
             <LinkIcon
               icon={Mail}
               size={30}
-              href="mailto:contact@testmail.com"
+              href={`mailto:${CONTACT_INFO.EMAIL}`}
             />
           </div>
 

@@ -1,6 +1,7 @@
 
 import {Github, Linkedin, Mail} from 'lucide-react'
 
+import {CONTACT_INFO} from '@/config/profile'
 import LinkIcon from './ui/LinkIcon'
 
 const Footer = () => {
@@ -41,19 +42,19 @@ const Footer = () => {
             >
               <LinkIcon
                 icon={Github}
-                href="http://github.com"
+                href={CONTACT_INFO.GITHUB}
                 newTab
               />
 
               <LinkIcon
                 icon={Linkedin}
-                href="http://linkedin.com"
+                href={CONTACT_INFO.LINKEDIN}
                 newTab
               />
 
               <LinkIcon
                 icon={Mail}
-                href="mailto:contact@testmail.com"
+                href={`mailto:${CONTACT_INFO.EMAIL}`}
               />
             </div>
           </div>

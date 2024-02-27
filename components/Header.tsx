@@ -4,7 +4,7 @@
 import {useState} from 'react'
 import {Menu, X} from 'lucide-react'
 
-import {headerNav} from '@/config/site'
+import {HEADER_NAV} from '@/config/site'
 import Logo from './ui/Logo'
 import StyledLink from './ui/StyledLink'
 
@@ -17,7 +17,7 @@ const Header = () => {
   }
 
   const navLinks = (
-    headerNav.map(item => (
+    HEADER_NAV.map(item => (
       <li
         key={item.id}
         onClick={() => setShowMenu(false)}

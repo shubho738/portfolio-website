@@ -1,8 +1,15 @@
 
-export const about: string = "Hello, My name is Shubhankar. I'm a React developer passionate about crafting dynamic and responsive web applications. I strive to create code that is clean and easily maintainable, prioritizing an engaging and efficient user experience. Alongside my front-end knowledge, I possess basic backend skills, ensuring a  more comprehensive understanding of the full development stack. I am committed to continuous learning, embracing new tools and methodologies to remain adaptive in this ever-evolving landscape."
+export const CONTACT_INFO = {
+  GITHUB: 'https://github.com/shubho738',
+  LINKEDIN: 'https://www.linkedin.com/in/shubhankar-chakraborty-3b11442b5/',
+  EMAIL: 'sbhankar245@proton.me'
+}  
 
 
-export const techStack = [
+export const ABOUT: string = "Hello, My name is Shubhankar. I'm a React developer passionate about crafting dynamic and responsive web applications. I strive to create code that is clean and easily maintainable, prioritizing an engaging and efficient user experience. Alongside my front-end knowledge, I possess basic backend skills, ensuring a  more comprehensive understanding of the full development stack. I am committed to continuous learning, embracing new tools and methodologies to remain adaptive in this ever-evolving landscape."
+
+
+export const TECH_STACK = [
   { id: '1', tech: 'React' },
   { id: '2', tech: 'Next.js' },
   { id: '3', tech: 'Typescript' },
@@ -19,7 +26,7 @@ export const techStack = [
 
 
 
-export const projects = [
+export const PROJECTS = [
   {
     id: '1', 
     title: 'Hamony Heaven', 

@@ -1,5 +1,5 @@
 
-export const siteConfig = {
+export const SITE_CONFIG = {
 
   title: "Shubhankar Chakraborty - React Developer",
 
@@ -11,7 +11,7 @@ export const siteConfig = {
 
 
 
-export const headerNav = [
+export const HEADER_NAV = [
     { id: "home-link", label: "Home", href: "/" },
     { id: "about-link", label: "About", href: "#about" },
     { id: "projects-link", label: "Projects", href: "#projects" },

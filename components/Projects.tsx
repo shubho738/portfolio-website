@@ -1,5 +1,5 @@
 
-import {projects} from '@/config/profile'
+import {PROJECTS} from '@/config/profile'
 import StyledHeading from './ui/StyledHeading'
 import Project from './Project'
 
@@ -23,7 +23,7 @@ const Projects = () => {
           <div
             className="space-y-28"
           >
-            {projects?.map(project => (
+            {PROJECTS?.map(project => (
               <Project
                 key={project.id}
                 {...project}

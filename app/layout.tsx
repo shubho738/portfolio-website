@@ -2,7 +2,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import {siteConfig} from '@/config/site'
+import {SITE_CONFIG} from '@/config/site'
 import ToastProvider from '@/providers/ToastProvider'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -11,8 +11,8 @@ import '@/styles/globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: siteConfig.title,
-  description: siteConfig.description,
+  title: SITE_CONFIG.title,
+  description: SITE_CONFIG.description,
   authors: [
     {
       name: "Shubhankar Chakraborty",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: siteConfig.url,
-    title: siteConfig.title,
-    description: siteConfig.description,
+    url: SITE_CONFIG.url,
+    title: SITE_CONFIG.title,
+    description: SITE_CONFIG.description,
   },
 
   icons: {

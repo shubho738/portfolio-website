@@ -1,5 +1,5 @@
 
-import {about, techStack} from '@/config/profile'
+import {ABOUT, TECH_STACK} from '@/config/profile'
 import StyledHeading from './ui/StyledHeading'
 import TextCard from './ui/TextCard'
 
@@ -26,13 +26,13 @@ const About = () => {
             <p
               className="text-md text-[1.16rem] leading-[1.85rem]"
             >
-              {about}
+              {ABOUT}
             </p>
 
             <div
               className="flex items-start flex-wrap gap-y-4 gap-x-2"
             >
-              {techStack?.map(tech => (
+              {TECH_STACK?.map(tech => (
                 <TextCard
                   key={tech.id}
                   customStyles="transition-standard | hover:translate-x-1"
