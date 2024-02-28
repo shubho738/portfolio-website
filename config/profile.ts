@@ -12,7 +12,7 @@ export const ABOUT: string = "Hello, My name is Shubhankar. I'm a React develope
 export const TECH_STACK = [
   { id: '1', tech: 'React' },
   { id: '2', tech: 'Next.js' },
-  { id: '3', tech: 'Typescript' },
+  { id: '3', tech: 'TypeScript' },
   { id: '4', tech: 'Tailwind' },
   { id: '5', tech: 'SASS' },
   { id: '6', tech: 'Responsive Design' },
