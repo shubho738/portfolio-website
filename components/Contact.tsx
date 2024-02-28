@@ -1,6 +1,7 @@
 
 'use client'
 
+import {useEffect} from 'react'
 import toast from 'react-hot-toast'
 import { useForm, ValidationError } from '@formspree/react'
 
@@ -11,12 +12,15 @@ import Button from './ui/Button'
 
 const Contact = () => {
 
-  const [state, handleSubmit] = useForm("xpzvrypy")
+  const [state, handleSubmit, reset] = useForm("xpzvrypy")
 
-  if (state.succeeded) {
-    toast.success("Thanks for reaching out!", {id: "success"})
-    return
-  }
+
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Thanks for reaching out!", {id: "messageSent"})
+     reset()
+    }
+  }, [state.succeeded, reset])
 
 
   return (
