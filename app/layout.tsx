@@ -8,7 +8,6 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import '@/styles/globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: SITE_CONFIG.title,
@@ -46,9 +45,7 @@ export default function RootLayout({
     <html 
       lang="en"
     >
-      <body 
-        className={inter.className}
-      >
+      <body>
         <ToastProvider />
         <Header />
         {children}
