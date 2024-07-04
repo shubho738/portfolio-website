@@ -6,7 +6,7 @@ export const CONTACT_INFO = {
 }  
 
 
-export const ABOUT: string = "Hello, My name is Shubhankar. I'm a React developer passionate about crafting dynamic and responsive web applications. I strive to create code that is clean and easily maintainable, prioritizing an engaging and efficient user experience. Alongside my front-end knowledge, I possess basic backend skills, ensuring a  more comprehensive understanding of the full development stack. I am committed to continuous learning, embracing new tools and methodologies to remain adaptive in this ever-evolving landscape."
+export const ABOUT: string = "Hello, My name is Shubhankar. I'm a React developer passionate about crafting dynamic and responsive web applications. I strive to create code that is clean and easily maintainable, prioritizing an engaging and efficient user experience. Alongside my front-end knowledge, I possess foundational backend skills, ensuring a  more comprehensive understanding of the full development stack. I am committed to continuous learning, embracing new tools and methodologies to remain adaptive in this ever-evolving landscape."
 
 
 export const TECH_STACK = [
@@ -19,9 +19,8 @@ export const TECH_STACK = [
   { id: '7', tech: 'State Management Libraries' },
   { id: '8', tech: 'GIT' },
   { id: '9', tech: 'RESTful API' },
-  { id: '10', tech: 'Backend Basics' },
-  { id: '11', tech: 'Node.js' },
-  {id: '12', tech: 'DBMS'}
+  { id: '10', tech: 'MERN Stack' },
+  {id: '11', tech: 'DBMS'}
 ]
 
 
