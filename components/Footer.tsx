@@ -25,7 +25,7 @@ const Footer = () => {
             <span
               className="text-xs"
             >
-              Made by Shubhankar Chakraborty
+              &copy; 2024 Made by Shubhankar Chakraborty
             </span>
           </div>
 
